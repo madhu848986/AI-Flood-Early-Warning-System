@@ -1,0 +1,72 @@
+
+AI-DRIVEN MULTIMODAL FLOOD EARLY-WARNING AND
+DYNAMIC SAFE-ZONE RECOMMENDATION SYSTEM
+
+EXPERIMENTAL RESULTS SUMMARY
+
+1. FLOOD PREDICTION MODEL COMPARISON
+
+Algorithms evaluated:
+- Random Forest
+- XGBoost
+
+Random Forest was selected based on its stronger
+average results in repeated spatial holdout evaluation.
+
+Mean ROC-AUC:
+Random Forest: 0.7774
+XGBoost:       0.7535
+
+Mean flood recall:
+Random Forest: 0.4790
+XGBoost:       0.3841
+
+The results indicate that flood detection performance
+is limited and requires further improvement.
+
+2. FLOOD-AWARE ROUTE EVALUATION
+
+Number of route pairs: 20
+
+Lambda 5:
+Average estimated risk reduction: 12.24%
+Average additional distance: 5.262 km
+Improved pairs: 19/20
+
+Lambda 10:
+Average estimated risk reduction: 16.30%
+Average additional distance: 10.160 km
+Improved pairs: 20/20
+
+Lambda 10 achieved greater estimated risk reduction,
+while Lambda 5 offered a shorter-distance trade-off.
+
+3. PAIR 14 ROUTE COMPARISON
+
+Shortest route distance: 81.237 km
+Flood-aware route distance: 84.649 km
+
+Shortest route risk: 0.068169
+Flood-aware route risk: 0.030704
+
+Estimated risk reduction: 54.96%
+Additional distance: 3.412 km
+
+4. SHELTER RISK SCREENING
+
+Total OSM shelter candidates: 311
+Lower-risk screening category: 246
+High-risk screening category: 65
+
+All candidates require field verification.
+The screening categories do not confirm shelter safety.
+
+5. IMPORTANT LIMITATIONS
+
+- Flood predictions are experimental model estimates.
+- The model uses a limited set of labelled flood observations.
+- Route risk estimates depend on the spatial prediction grid.
+- OSM shelter locations and suitability require verification.
+- The system is not an operational emergency warning service.
+
+END OF EXPERIMENTAL RESULTS

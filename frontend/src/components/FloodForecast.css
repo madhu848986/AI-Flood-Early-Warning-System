@@ -1,0 +1,183 @@
+
+.forecast-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.forecast-intro {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.forecast-intro h2 {
+  color: #123b55;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.forecast-intro p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.forecast-warning {
+  background: #fff8e8;
+  border-left: 4px solid #e5a93d;
+  padding: 18px 22px;
+  border-radius: 8px;
+}
+
+.forecast-warning strong {
+  color: #805b14;
+  font-size: 14px;
+}
+
+.forecast-warning p {
+  color: #786b51;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 7px;
+}
+
+.forecast-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.forecast-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 23px;
+}
+
+.forecast-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.forecast-card h2 {
+  color: #123b55;
+  font-size: 28px;
+  margin: 13px 0 8px;
+}
+
+.forecast-card small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.forecast-panel {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.forecast-panel h3 {
+  color: #123b55;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.forecast-description {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.forecast-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.forecast-table th,
+.forecast-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f4;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.forecast-table th {
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.forecast-table td {
+  color: #475569;
+}
+
+.forecast-risk-label {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.forecast-action-list {
+  padding-left: 20px;
+  color: #475569;
+}
+
+.forecast-action-list li {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 7px;
+}
+
+.forecast-disclaimer {
+  background: #f1f5f9;
+  padding: 18px 22px;
+  border-radius: 8px;
+  border-left: 4px solid #64748b;
+}
+
+.forecast-disclaimer strong {
+  color: #334155;
+  font-size: 14px;
+}
+
+.forecast-disclaimer p {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 7px;
+}
+
+.forecast-message {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  color: #475569;
+}
+
+.forecast-message.error {
+  color: #b91c1c;
+}
+
+@media (max-width: 700px) {
+  .forecast-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast-intro,
+  .forecast-panel,
+  .forecast-card {
+    padding: 18px;
+  }
+}

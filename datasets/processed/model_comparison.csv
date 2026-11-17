@@ -1,0 +1,7 @@
+Metric,Random Forest,XGBoost
+Accuracy,0.8716,0.8716
+Balanced Accuracy,0.6943,0.5946
+ROC-AUC,0.8293,0.8069
+Flood Precision,0.46,0.43
+Flood Recall,0.46,0.23
+Flood F1-Score,0.46,0.3

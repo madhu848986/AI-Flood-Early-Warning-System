@@ -1,0 +1,68 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+
+# Raw satellite, elevation and map datasets
+datasets/raw/
+*.HDF5
+*.hdf
+*.nc4
+*.hgt
+*.tif
+*.pbf
+*.gpkg
+
+# Large generated datasets
+datasets/processed/koshi_nasa_flood_pixels*.csv
+datasets/processed/koshi_road_graph*
+datasets/processed/koshi_vehicle_roads*
+datasets/processed/koshi_unique_road_junctions*
+
+# Accidental empty files
+/0).astype(int)
+/1
+/1)
+/for
+/{r
+
+# Local user database
+backend/floodguard_users.db
+
+# Large road network files not required by the application
+datasets/processed/koshi_coordinate_road_graph.graphml
+datasets/processed/koshi_flood_risk_road_graph.graphml
+datasets/processed/koshi_junction_road_graph.graphml
+
+# Backend backup files
+backend/alert_scheduler_backup.p
+backend/auth_service_backup.py
+# Old SMS test script
+check_mobile.py

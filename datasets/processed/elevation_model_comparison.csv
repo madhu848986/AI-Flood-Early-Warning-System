@@ -1,0 +1,6 @@
+Metric,Baseline,With Elevation
+Accuracy,0.8716,0.8349
+Balanced Accuracy,0.6943,0.74
+ROC-AUC,0.8293,0.8518
+Flood Recall,0.4615,0.6154
+Flood F1-score,0.4615,0.4706
